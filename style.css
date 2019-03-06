@@ -154,15 +154,20 @@ body section {
   cursor: pointer;
 }
 .drop .drop-options a.remove {
-  -webkit-animation: removeOption 0.2s;
-          animation: removeOption 0.2s;
+  
   max-height: 0px;
 }
-.drop .drop-options a.add {
-  -webkit-animation: addOption 0.2s;
-          animation: addOption 0.2s;
-}
+
 .drop .drop-options a.hide {
   display: none;
+}
+@keyframes hide {
+  from, to {
+    max-height: 0px;
+    max-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+  }
 }
 
