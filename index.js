@@ -163,15 +163,6 @@ var drop = function(info){var o = {
 }; o.init(); return o;}
 
 
-//Set up some data
-var options = [
-   { html: 'cats', value: 'cats' },
-   { html: 'fish', value: 'fish' },
-   { html: 'squids', value: 'squids' },
-   { html: 'cats', value: 'whales' },
-   { html: 'cats', value: 'bikes' },
-];
-
 var myDrop = new drop({
    selector:  '#myMulti',
    preselected: [0, 2]
