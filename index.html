@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MultiSelect </title>
-  
-  
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>MultiSelect</title>
 </head>
-
 <body>
-    
-    <div class="container">
-    <section>
+   <div class="conteiner">
+       <section>
     <h3>Multiselect </h3>
-
-  </section>
-  <section>
-    
-    <select multiple="multiple" id="myMulti">
-      <option>C++</option>
-      <option>C#</option>
-      <option>Java</option>
-      <option>Phyton</option>
-      <option>PHP</option>
-      <option>HTML</option>
-      <option>CSS</option>
-      <option>Rybu</option>
-      
-    </select>
-  </section>
-</div>
-
-
-  
-  
-<script  src="index.js"></script>
-
-
-
-
+</section>
+   
+    <div id="select" class="select_container">
+        <div class="select_arrow">&#9662;</div>
+        <div class="select_placeholder"></div>
+        <select class="select_select" onchange="add_selected_item(this, event);">
+            <option class="select_hide" value="filler"></option>
+            <option value="option1">Audi</option>
+            <option value="option2">BMW</option>
+            <option value="option3">Opel</option>
+            <option value="option4">Lexus</option>
+            <option value="option5">Ferari</option>
+            <option value="option6">Lada</option>
+        </select>
+        <div class="select_items"></div>
+    </div>
+    </div>
 </body>
-
 </html>
